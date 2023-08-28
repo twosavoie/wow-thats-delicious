@@ -1,0 +1,20 @@
+extends layout 
+
+block header 
+  h2 Yo!
+block content 
+  p Hello
+  h2 Sale ends in #{h.moment().endOf('day').fromNow()}
+
+//- Examples
+//- div.wrapper.second 
+//-   - const upDog = dog.toUpperCase()
+//-   p.hello Hello my dog's name is #{dog.toUpperCase()}!
+//-   span#yo Yo!!
+//-   img.dog(src="dog.jpg" alt=`Dog ${dog}`)
+
+//- .wrapper.second 
+//-   h2 
+//-     | Hello 
+//-     em How are you?
+
